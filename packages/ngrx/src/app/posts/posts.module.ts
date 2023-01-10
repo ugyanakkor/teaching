@@ -13,7 +13,8 @@ import {PostsService} from "./posts.service";
   imports: [
     BrowserModule,
     StoreModule.forFeature('posts', reducers),
-    EffectsModule.forFeature([PostsEffects])
+    // Register the effects
+    // EffectsModule.forFeature([PostsEffects])
   ],
   providers: [
     PostsService

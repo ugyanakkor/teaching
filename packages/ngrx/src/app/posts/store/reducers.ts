@@ -1,6 +1,6 @@
 import {PostsStateInterface} from "../interfaces/posts-state.interface";
 import {createReducer, on} from "@ngrx/store";
-import {getPosts, getPostsFailure, getPostsSuccess} from "./actions";
+import {getPosts, /* getPostsFailure, getPostsSuccess*/} from "./actions";
 
 export const initialState: PostsStateInterface = {
   isLoading: false,
@@ -14,7 +14,8 @@ export const reducers = createReducer(
     ...state, isLoading: true
   })),
 
-  on(getPostsSuccess, (state, action) => ({
+// Reducers for effects
+/*  on(getPostsSuccess, (state, action) => ({
     ...state,
     isLoading: false,
     posts: action.posts
@@ -24,5 +25,5 @@ export const reducers = createReducer(
     ...state,
     isLoading: false,
     error: action.error
-  })),
+  })),*/
 );
