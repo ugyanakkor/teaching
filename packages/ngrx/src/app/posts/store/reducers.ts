@@ -21,6 +21,8 @@ export const reducers = createReducer(
   })),
 
   on(getPostsFailure, (state, action) => ({
-    ...state, isLoading: false, error: action.error
+    ...state,
+    isLoading: false,
+    error: action.error
   })),
 );
