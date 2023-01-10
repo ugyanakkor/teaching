@@ -2,14 +2,15 @@
 
 
 ## Run projects
-change-detection: 
+**change-detection:**
   * npx nx run change-detection:serve
   * npx nx run change-detection:test
   * npx nx run change-detection:lint
   * npx nx run change-detection:build
+ * npx nx g @nrwl/angular:component todos --project=change-detection
 
-create a component for this project
-  * npx nx g @nrwl/angular:component todos --project=change-detection
+**ngrx:**
+ * npx nx run ngrx:serve
 
 ## Understand this workspace
 
