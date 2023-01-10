@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {delay, Observable, of} from "rxjs";
-import {PostInterface} from "./interfaces/posts.interface";
+import {PostInterface, PostsInterface} from "./interfaces/posts.interface";
 
 @Injectable()
 export class PostsService {
