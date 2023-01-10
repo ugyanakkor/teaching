@@ -11,5 +11,8 @@ import {StoreModule} from "@ngrx/store";
     BrowserModule,
     StoreModule.forFeature('posts', reducers)
   ],
+  exports: [
+    PostsComponent
+  ]
 })
 export class PostsModule {}
