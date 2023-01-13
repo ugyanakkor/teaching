@@ -1,0 +1,9 @@
+:host {
+  .iFrame {
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
