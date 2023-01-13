@@ -11,7 +11,7 @@ export class AppComponent {
   @ViewChild('iFrame') private readonly iFrameRef: ElementRef<HTMLIFrameElement> | undefined;
 
   openNativeApp(): void {
-    this.getSrs()
+    this.getParameters()
       .subscribe((temp: string): void => {
         // btoa is deprecated from Node, but when we are working on the DOM
         // we can window.btoa() to work around IDE deprecation notice
@@ -20,7 +20,7 @@ export class AppComponent {
       });
   }
 
-  private getSrs = (): Observable<string> =>
+  private getParameters = (): Observable<string> =>
     of(
       //btoa want a string, so we parse the object to a string
       JSON.stringify({
