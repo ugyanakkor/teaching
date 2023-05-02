@@ -1,4 +1,6 @@
 # Monorepo for teaching Angular concepts
+**create a new repo**
+* npx nx g @nx/angular:application standalone-app
 
 
 ## Run projects
@@ -7,7 +9,7 @@
   * npx nx run change-detection:test
   * npx nx run change-detection:lint
   * npx nx run change-detection:build
- * npx nx g @nrwl/angular:component todos --project=change-detection
+  * npx nx g @nrwl/angular:component todos --project=change-detection
 
 **ngrx:**
  * npx nx run ngrx:serve
@@ -15,6 +17,8 @@
 **custom-protocol:**
 * npx nx run custom-protocol:serve
 
+**standalone-app:**
+* npx nx run standalone-app:serve
 
 ## Understand this workspace
 
